@@ -1,0 +1,7 @@
+-r base.pip
+parameterized
+flake8
+isort
+ipdb
+pre-commit
+ipython

@@ -1,0 +1,4 @@
+__pycache__
+*.py[cod]
+barcode_battler_engine.egg-info/
+*.swp
