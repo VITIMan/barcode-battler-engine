@@ -22,6 +22,7 @@ This site generates on-the-fly the card information using this package, check it
 
 ```
 from barcodebattler.bb2.builder import BarcodeBattler2Builder
+barcode = '0451508035504'
 barcode_data = BarcodeBattler2Builder().build(barcode)
 print(barcode_data)
 barcode: 0451508035504, hp: 4500, st: 1500, df: 800, speed: 5, race: 0, job: 3, pp:5, mp:0, special: 50, post_read: False
@@ -29,10 +30,10 @@ barcode: 0451508035504, hp: 4500, st: 1500, df: 800, speed: 5, race: 0, job: 3, 
 
 ## Reading barcodes using prompt
 
-Test your cards using the `prompt_reader.py` tool
+Test your cards using the `barcodebattler-reader` tool
 
 ```
-./prompt_reader.py
+> barcodebattler-reader
 Enter barcode (type exit to finish): 0371110125502
 +-----------+-----------------+
 | Barcode   |   0371110125502 |
