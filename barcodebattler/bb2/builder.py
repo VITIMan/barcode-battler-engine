@@ -362,7 +362,7 @@ class BarcodeBattler2Builder(PreReadingMixin, PostReadingMixin):
         # if barcode_data.job >= 7 and barcode_data.race in [5, 6, 7, 8]:
         # TODO Should be previous_barcode_data.job seems an error in BarcodeBattler2Simulator codebase
         if previous_barcode_data.job >= 7 and barcode_data.race in WEAPONS + ARMORS:
-            raise ValueError('Weapons and armos are note allowed for Wizards.')
+            raise ValueError('Weapons and armor are not allowed for Wizards.')
 
     def build_over(self, previous_barcode_data: BarcodeData, barcode: str) -> BarcodeData:
         ''' Build a second barcode data, based on previous barcode data. to be compatible
